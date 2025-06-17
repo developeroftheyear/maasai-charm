@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maasai Charm</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Maasai Charm</div>
+    <nav class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="auth-buttons">
+      <button class="login-btn" onclick="showLogin()">Login</button>
+      <button class="signup-btn" onclick="showSignup()">Sign Up</button>
+    </div>
+  </header>
+
+  <main class="homepage">
+   <h1 class="homepage-heading">🌟<span class="brand-name"> Welcome to Maasai Charm</span> 🌟</h1>
+    <p><span class="brand">Where tradition meets style.</span> <br>Discover handcrafted Maasai jewelry and accessories<br> made with love, color, and culture. Each piece is a bold statement of heritage, reimagined for the modern world. <br> Shop unique, authentic designs that celebrate the spirit of the Maasai people.</p>
+  </main>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="hideLogin()">&times;</span>
+      <h2>Welcome Back to Maasai Charm</h2>
+      <form>
+        <label for="email">Email Address</label>
+        <input type="email" placeholder="you@mail.com" required />
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+      <div class="extra-links">
+        <p><a href="#">Forgot Password?</a></p>
+        <p>Don't have an account? <a href="#" onclick="switchToSignup()">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal" id="signupModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="hideSignup()">&times;</span>
+      <div class="signup-header">
+        <h2>Create Your Maasai Charm Account</h2>
+      </div>
+      <form>
+        <label for="fullName">Full Name</label>
+        <input type="text" placeholder="Peter Johnson" required />
+        <label for="email">Email Address</label>
+        <input type="email" placeholder="you@mail.com" required />
+        <label for="password">Password</label>
+        <input type="password" id="signupPassword" placeholder="Password" required />
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+    
+        <button type="submit" class="submit-btn">Create Account</button>
+      </form>
+      <div class="extra-links">
+        <p>Already have an account? <a href="#" onclick="switchToLogin()">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

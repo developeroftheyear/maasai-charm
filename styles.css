@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  /* Gradient overlay + background image */
+  background: linear-gradient(
+      rgba(24, 22, 22, 0.6),
+      rgba(243, 65, 10, 0.94)
+    ),
+    url('images/background.jpg') no-repeat center center fixed;
+
+  background-size: cover;
+  color: white; /* So text shows up clearly */
+}
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fcecec;
+  border-bottom: 2px solid #e1c6c6;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #b01f1f;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #b01f1f;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #000;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.login-btn {
+  background-color: white;
+  border: 2px solid #b01f1f;
+  color: #b01f1f;
+}
+
+.login-btn:hover {
+  background-color: #b01f1f;
+  color: white;
+}
+
+.signup-btn {
+  background-color: #b01f1f;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #8f1919;
+}
+
+.homepage {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: #000;
+  position: relative;
+}
+
+.homepage h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: #000;
+  padding-left: 20px;
+  margin-top: 9%;
+  margin-bottom: 20px; 
+  letter-spacing: 2px;
+}
+
+.homepage p {
+  padding-left: 20px;
+  padding-bottom: 180px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  font-size: 18px;
+  margin-top: 0; 
+}
+
+.brand{
+  color: #b01f1f;
+  font-size: 40px;
+  font-weight:bold;
+  margin-bottom: 40px;
+}
+
+.homepage-heading {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 60px;
+  color: #ff6600; /* Orange main heading color */
+}
+
+.brand-name {
+  color: #000;         
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #ffcccb;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 420px;
+  position: relative;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content h2 {
+  text-align: center;
+  color: #b01f1f;
+  margin-bottom: 20px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #b01f1f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #8f1919;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+}
+
+.extra-links {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.extra-links a {
+  color: #b01f1f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+.signup-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-header .icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+
